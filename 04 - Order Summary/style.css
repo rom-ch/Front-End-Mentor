@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: url(images/pattern-background-mobile.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-color: hsl(225, 100%, 94%);
+}
+
+img {
+	max-width: 100%;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+}
+
+.main {
+	padding: 0rem 1.5rem 1rem 1.5rem;
+}
+
+.container {
+	width: 350px;
+	border-radius: 1rem;
+	text-align: center;
+	background-color: white;
+}
+
+.text {
+	padding: 1rem 1rem 0.8rem;
+}
+
+.title {
+	font-weight: 900;
+	font-size: 1.5rem;
+	color: hsl(223, 47%, 23%);
+}
+
+.subtitle {
+	color: hsl(224, 23%, 55%);
+	font-weight: 500;
+	margin-block: 1rem;
+}
+
+.plan {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: hsl(230, 75%, 98%);
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+.annual-plan {
+	display: flex;
+	flex-direction: column;
+}
+
+.plan-plan {
+	color: hsl(223, 47%, 23%);
+	font-weight: 900;
+}
+
+.price {
+	color: hsl(224, 23%, 55%);
+}
+
+.change {
+	font-weight: 700;
+	font-size: 15px;
+	color: hsl(245, 75%, 52%);
+}
+
+.change:active {
+	text-decoration: none;
+	color: hsl(245, 83%, 68%);
+}
+
+.btn {
+	display: block;
+	text-decoration: none;
+	font-weight: 900;
+	color: white;
+	background-color: hsl(245, 75%, 52%);
+	border-radius: 1rem;
+	padding: 1rem 2rem;
+	cursor: pointer;
+	box-shadow: 0 0.5rem 20px 0px hsl(245, 50%, 52%, 0.3);
+	margin-block: 1.5rem;
+}
+
+.btn:active {
+	background-color: hsl(245, 83%, 68%);
+}
+
+.cancel {
+	display: block;
+	font-weight: 900;
+	text-decoration: none;
+	margin-block: 0.5rem;
+	color: hsl(224, 23%, 55%);
+}
+
+.cancel:active {
+	color: hsl(223, 47%, 23%);
+}
+
+@media (min-width: 400px) {
+	body {
+		background: url(images/pattern-background-desktop.svg);
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-color: hsl(225, 100%, 94%);
+	}
+}
+
+@media (min-width: 1440px) {
+	body {
+		background: url(images/pattern-background-desktop.svg);
+		background-repeat: repeat-x;
+		background-position: center top;
+		background-color: hsl(225, 100%, 94%);
+	}
+}
