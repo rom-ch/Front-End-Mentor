@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+	width: 90%;
+	max-width: 396px;
+}
+
+.card {
+	padding: 2.5rem 3rem;
+}
+
+.card-1 {
+	background-color: hsl(31, 77%, 52%);
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+}
+
+.card-2 {
+	background-color: hsl(184, 100%, 22%);
+}
+
+.card-3 {
+	background-color: hsl(179, 100%, 13%);
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+}
+
+.icon {
+	margin-bottom: 1.5rem;
+}
+
+.text .title {
+	font-family: 'Big Shoulders Display', sans-serif;
+	font-size: 2.5rem;
+	color: hsl(0, 0%, 95%);
+}
+
+.subtitle {
+	color: hsla(0, 0%, 100%, 0.75);
+	line-height: 2;
+	margin-top: 1.5rem;
+	max-width: 300px;
+}
+
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	outline: none;
+	background-color: hsl(0, 0%, 95%);
+	border-radius: 50px;
+	padding: 1rem 2.5rem;
+	margin-block: 2rem 1rem;
+	cursor: pointer;
+}
+
+.card-1 a {
+	color: hsl(31, 77%, 52%);
+}
+
+.card-2 a {
+	color: hsl(184, 100%, 22%);
+}
+
+.card-3 a {
+	color: hsl(179, 100%, 13%);
+}
+
+.btn:active {
+	color: hsl(0, 0%, 95%);
+	outline: 2px solid hsl(0, 0%, 95%);
+}
+
+.card-1 .btn:active {
+	background-color: hsl(31, 77%, 52%);
+}
+
+.card-2 .btn:active {
+	background-color: hsl(184, 100%, 22%);
+}
+
+.card-3 .btn:active {
+	background-color: hsl(179, 100%, 13%);
+}
+
+@media (min-width: 1110px) {
+	.container {
+		display: flex;
+		justify-content: center;
+		max-width: 70%;
+	}
+
+	.card-1 {
+		border-top-right-radius: 0;
+		border-bottom-left-radius: 0.5rem;
+	}
+
+	.card-3 {
+		border-bottom-left-radius: 0;
+		border-top-right-radius: 0.5rem;
+	}
+
+	.card {
+		max-width: 300px;
+	}
+
+	.subtitle {
+		max-width: 400px;
+	}
+
+	.btn {
+		margin-top: 4rem;
+	}
+}
